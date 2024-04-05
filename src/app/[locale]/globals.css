@@ -125,6 +125,12 @@ html {
   border: 1px solid white;
 }
 
+@media (max-width: 767px) {
+  .acreage-before::before {
+    display: none;
+  }
+}
+
 .shadow-custom-2 {
   box-shadow: 1.3px 0px 5.3px rgba(0, 0, 0, 0.061),
     4.5px 0px 17.9px rgba(0, 0, 0, 0.089);

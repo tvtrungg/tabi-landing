@@ -30,58 +30,75 @@ export default function Home() {
           overlay
         />
 
-        <div className="max-w-screen-xl h-screen mx-auto" id="main">
-          <div className="w-[35%] text-white z-[2] mx-14 2xl:mx-0 translate-y-1/2">
-            <h4 className="relative text-center mb-5 text-lg">
+        <div className="h-screen xs:max-w-screen-xs 2xs:max-w-screen-2xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto" id="main">
+          <div className="w-full sm:w-1/2 lg:w-[35%] text-white z-[2] translate-y-1/2">
+            <h4 className="relative md:text-center mb-5 text-lg">
               <span className="acreage-before">{t("homePage.acreage")}</span>
             </h4>
-            <h1 className="text-8xl text-primary-accent-lighter">
+            <h1 className="text-6xl 2xs:text-7xl sm:text-8xl text-primary-accent-lighter">
               {t("homePage.title")}
               <span className="text-white">{t("homePage.title2")}</span>
             </h1>
-            <h4 className="tracking-wider text-lg font-normal text-white mt-4">
+            <h4 className="tracking-wider text-lg sm:text-lg font-normal text-white mt-4">
               {t("homePage.subTitle")}
             </h4>
           </div>
         </div>
-        <Row className="absolute bottom-[5%] left-1/2 -translate-x-1/2  w-[70%] h-24 px-10 bg-white rounded-2xl items-center mx-auto shadow-custom-1">
-          <Col span={7} className="flex gap-1">
-            <IoLocationOutline className="text-2xl align-text-bottom mr-1" />
-            <div>
-              <h3 className="text-xl">{t("homePage.criteria.item1")}</h3>
-              <p className="text-grey text-base">
-                {t("homePage.criteria.item1_sub")}
-              </p>
-            </div>
-          </Col>
-          <Col span={7} className="flex gap-1">
-            <CiStar className="text-2xl align-text-bottom mr-1" />
-            <div>
-              <h3 className="text-xl">{t("homePage.criteria.item2")}</h3>
-              <p className="text-grey text-base">
-                {t("homePage.criteria.item2_sub")}
-              </p>
-            </div>
-          </Col>
-          <Col span={6} className="flex gap-1">
-            <HiOutlineUserGroup className="text-2xl align-text-bottom mr-1" />
-            <div>
-              <h3 className="text-xl">{t("homePage.criteria.item3")}</h3>
-              <p className="text-grey text-base">
-                {t("homePage.criteria.item3_sub")}
-              </p>
-            </div>
-          </Col>
-          <Col span={4} className="flex justify-end">
-            <Button
-              type="primary"
-              className="h-full flex flex-col gap-1 items-center p-2 px-8 rounded-xl text-base"
-            >
-              <FaRegCalendarCheck className="text-2xl" />
-              {t("homePage.criteria.book_btn")}
-            </Button>
-          </Col>
-        </Row>
+        {/* md=991, lg=1200 */}
+        <div className="w-full flex flex-col gap-2 absolute bottom-[2%] lg:bottom-[5%] left-1/2 -translate-x-1/2 xs:max-w-screen-xs 2xs:max-w-screen-2xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
+          <Row
+            gutter={[24, 24]}
+            className="w-full px-5 xl:px-10 py-4 bg-white rounded-2xl items-center shadow-custom-1 !mx-0"
+          >
+            <Col md={24} lg={20} xl={20}>
+              <Row gutter={[16, 16]} className="flex-col md:flex-row">
+                <Col span={24} md={8} className="flex gap-1">
+                  <IoLocationOutline className="text-2xl align-text-bottom mr-1" />
+                  <div>
+                    <h3 className="text-lg sm:text-xl">{t("homePage.criteria.item1")}</h3>
+                    <p className="text-grey text-sm sm:text-base">
+                      {t("homePage.criteria.item1_sub")}
+                    </p>
+                  </div>
+                </Col>
+                <Col span={24} md={9} className="flex gap-1">
+                  <CiStar className="text-2xl align-text-bottom mr-1" />
+                  <div>
+                    <h3 className="text-lg sm:text-xl">{t("homePage.criteria.item2")}</h3>
+                    <p className="text-grey text-sm sm:text-base">
+                      {t("homePage.criteria.item2_sub")}
+                    </p>
+                  </div>
+                </Col>
+                <Col span={24} md={7} className="flex gap-1">
+                  <HiOutlineUserGroup className="text-2xl align-text-bottom mr-1" />
+                  <div>
+                    <h3 className="text-lg sm:text-xl">{t("homePage.criteria.item3")}</h3>
+                    <p className="text-grey text-sm sm:text-base">
+                      {t("homePage.criteria.item3_sub")}
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Col>
+            <Col lg={4} xl={4} className="hidden lg:block">
+              <Button
+                type="primary"
+                className="h-full flex flex-col gap-1 items-center p-2 px-10 rounded-xl text-base mx-auto"
+              >
+                <FaRegCalendarCheck className="text-2xl" />
+                {t("homePage.criteria.book_btn")}
+              </Button>
+            </Col>
+          </Row>
+          <Button
+            type="primary"
+            className="lg:hidden h-full w-full flex justify-center gap-1 p-2 sm:p-2.5 items-center rounded-xl text-base"
+          >
+            {t("homePage.criteria.book_btn")}
+            <FaRegCalendarCheck className="text-xl md:text-2xl" />
+          </Button>
+        </div>
       </div>
 
       <Destinations />

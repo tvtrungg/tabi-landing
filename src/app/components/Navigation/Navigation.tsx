@@ -34,7 +34,7 @@ const Navigation = ({
           }
         >
           <Link
-            className={`font-medium ${bgWhite ? "text-black" : "text-white"}`}
+            className={`font-medium text-sm md:text-base ${bgWhite ? "text-black" : "text-white"}`}
             href={`/${lang}/${item.href}`}
           >
             {item.label}

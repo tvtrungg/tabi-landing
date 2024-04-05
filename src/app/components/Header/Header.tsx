@@ -89,11 +89,11 @@ function Header({ lang }: THeaderProps) {
       `}
     >
       <div
-        className={`nav-menu max-w-screen-xl mx-auto py-4 ${
+        className={`nav-menu xs:max-w-screen-xs 2xs:max-w-screen-2xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto py-4 ${
           bgWhite ? "nav-menu-transparent" : ""
         }`}
       >
-        <div className="mx-14 2xl:mx-0 flex justify-between items-center">
+        <div className="flex justify-between items-center">
           <Image
             src="/logo/logo-125x78.svg"
             alt="Tabi Logo"
