@@ -1,0 +1,96 @@
+{
+  "container": {
+    "homePage": {
+      "acreage": "76,19 km², Europe",
+      "title": "Santorini",
+      "title2": ", Greece",
+      "subTitle": "Santorini - one of the Cycladic Islands belonging to Greece in the Aegean Sea",
+      "criteria": {
+        "item1": "Location",
+        "item1_sub": "Where is your destination?",
+        "item2": "Your Category",
+        "item2_sub": "What are you looking for?",
+        "item3": "Max Occupancy",
+        "item3_sub": "How many people are you?",
+        "book_btn": "Book Now"
+      }
+    },
+    "bookNow": "Book Now",
+    "welcome": "Welcome to",
+    "header": {
+      "nav1": "Home",
+      "nav2": "About",
+      "nav3": "Services",
+      "nav4": "Contact"
+    },
+
+    "footer": {
+      "title": "About Tabi",
+      "cskh": "Customer care",
+      "lhht": "Contact for cooperation",
+      "brn": "Business registration number: 123654987",
+      "brn_date": "Date of issue: January 1, 2023",
+      "place_of_issue": "Place of issue: Department of Planning and Investment of Ho Chi Minh City",
+      "subTitle_1": "Support",
+      "subTitle_2": "Payment partner",
+      "subTitle_3": "Others",
+      "subTitle_4": "Download Tabi App"
+    },
+
+    "destinations": {
+      "title": "Popular Destinations",
+      "subTitle": "Explore"
+    },
+    "romantic": {
+      "title": "Our Romantic Tropical Destinations",
+      "subTitle": "Honeymoon Specials",
+      "description": "Discover the world&apos;s most romantic destinations with your loved one. Our exclusive network connects 68,000 families to global destinations, offering refined experiences and seamless convenience."
+    },
+    "features": {
+      "title": "Unveiling Distinctions",
+      "subTitle": "Outstanding",
+      "feature": "Feature",
+      "feature_1": {
+        "title": "An Exclusive Haven for Discerning Travelers",
+        "description": "Redefining luxury travel with elegance and expertise. Our exclusive network connects 68,000 families to global destinations, offering refined experiences and seamless convenience.",
+        "content": {
+          "over": "Over",
+          "item1": "luxury hotels",
+          "item2": "affiliated hotels",
+          "item3": "countries network of",
+          "item4": "used by families of"
+        }
+      },
+      "feature_2": {
+        "title": "Relax at many famous hotels around the world",
+        "subTitle_1": "Enjoy your trip",
+        "description_1": "Popular Hotels and Accommodations",
+        "subTitle_2": "Popular Restaurants",
+        "description_2": "Explore diverse cuisine"
+      },
+      "feature_3": {
+        "title": "Book your trip easily in just 3 simple steps"
+      }
+    },
+    "booking": {
+      "title": "Book your trip easily in just 3 simple steps",
+      "subTitle": "Easy and Fast",
+      "step1": {
+        "title": "Choose Destination",
+        "description": "Explore and choose your preferred destination through our user-friendly website interface."
+      },
+      "step2": {
+        "title": "Complete Payment",
+        "description": "Effortlessly complete the payment process for your trip via our secure online platform."
+      },
+      "step3": {
+        "title": "Arrive at the Airport on Your Chosen Date",
+        "description": "Plan to arrive at the airport on your designated date and embark on an unforgettable journey."
+      },
+      "ongoing": "Ongoing",
+      "completed": "completed",
+      "tripTo": "Trip to",
+      "going": "people going"
+    }
+  }
+}

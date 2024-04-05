@@ -1,0 +1,26 @@
+.gradient-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 105%;
+  height: 105%;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-dominant-light),
+    var(--primary-dominant-lighter),
+    var(--primary-accent),
+    var(--primary-accent-light)
+  );
+  filter: blur(30px);
+  z-index: -1;
+}
+
+
+.booking-container .ant-card .ant-card-cover {
+  height: 45%;
+}
+.booking-container .ant-card .ant-card-body {
+  height: 50%;
+}

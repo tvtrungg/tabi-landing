@@ -1,0 +1,102 @@
+{
+  "container": {
+    "homePage": {
+      "acreage": "76,19 km², Europe",
+      "title": "Santorini",
+      "title2": ", Hy Lạp",
+      "subTitle": "Santorini - một trong những quần đảo Cycladic thuộc Hy Lạp ở biển Aegean",
+      "criteria": {
+        "item1": "Địa điểm ",
+        "item1_sub": "Điểm đến của bạn là ở đâu?",
+        "item2": "Loại phòng",
+        "item2_sub": "Bạn muốn tìm loại phòng nào?",
+        "item3": "Số người",
+        "item3_sub": "Số người ở mỗi phòng?",
+        "book_btn": "Đặt ngay"
+      }
+    },
+    "bookNow": "Đặt ngay",
+    "welcome": "Chào mừng đến với",
+    "header": {
+      "nav1": "Trang chủ",
+      "nav2": "Giới thiệu",
+      "nav3": "Dịch vụ",
+      "nav4": "Liên hệ"
+    },
+    "brand": "Giới thiệu",
+    "date": "Thứ 2 - Thứ 7: 7:00 - 22:00",
+    "phone": "+84 123 456 xxx",
+    "mail": "phone@gmail.com",
+    "address": "Quận 1, Thành phố Hồ Chí Minh",
+    "button": {
+      "read_btn": "Xem thêm"
+    },
+    "footer": {
+      "title": "Văn phòng Tabi",
+      "cskh": "Chăm sóc khách hàng",
+      "lhht": "Liên hệ hợp tác",
+      "brn": "Số đăng ký kinh doanh: 123654789",
+      "brn_date": "Ngày cấp: 01/01/2023",
+      "place_of_issue": "Nơi cấp: Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh",
+      "subTitle_1": "Hỗ trợ",
+      "subTitle_2": "Đối tác thanh toán",
+      "subTitle_3": "Khác",
+      "subTitle_4": "Tải ứng dụng Tabi"
+    },
+    "destinations": {
+      "title": "Điểm đến nổi tiếng",
+      "subTitle": "Khám phá"
+    },
+    "romantic": {
+      "title": "Điểm đến nhiệt đới lãng mạn",
+      "subTitle": "Ưu đãi tuần trăng mật",
+      "description": "Khám phá những điểm đến lãng mạn nhất thế giới cùng người thân yêu của bạn. Mạng lưới độc quyền của chúng tôi kết nối 68.000 gia đình với các điểm đến trên toàn cầu, mang đến những trải nghiệm tinh tế và sự thuận tiện liền mạch."
+    },
+    "features": {
+      "title": "Sự khác biệt",
+      "subTitle": "Nổi bật",
+      "feature": "Đặc điểm",
+      "feature_1": {
+        "title": "Thiên đường dành cho du khách sành điệu",
+        "description": "Thay đổi cách trải nghiệm du lịch sang một tầm cao mới với sự sang trọng và chuyên nghiệp. Kết nối hơn 68,000 gia đình đến các điểm đến toàn cầu, chúng tôi mang đến trải nghiệm tinh tế và tiện nghi hoàn hảo.",
+        "content": {
+          "over": "Hơn",
+          "item1": "khách sạn sang trọng",
+          "item2": "khu nghỉ dưỡng trực thuộc",
+          "item3": "mạng lưới các nước",
+          "item4": "được các gia đình sử dụng"
+        }
+      },
+      "feature_2": {
+        "title": "Nghỉ dưỡng tại nhiều khách sạn nổi tiếng trên khắp thế giới",
+        "subTitle_1": "Tận hưởng chuyến đi của bạn",
+        "description_1": "Khách sạn và nơi ở được ưa chuộng",
+        "subTitle_2": "Các nhà hàng nổi tiếng",
+        "description_2": "Khám phá nền ẩm thực đa dạng"
+      },
+      "feature_3": {
+        "title": "Đặt lịch dễ dàng chỉ với 3 bước đơn giản"
+      }
+    },
+    "booking": {
+      "title": "Đặt chuyến đi dễ dàng chỉ với 3 bước đơn giản",
+      "subTitle": "Dễ dàng và nhanh chóng",
+      "step1": {
+        "title": "Lựa Chọn Điểm Đến",
+        "description": "Chọn điểm đến ưa thích trên trang web của chúng tôi."
+      },
+      "step2": {
+        "title": "Thanh Toán",
+        "description": "Thanh toán cho chuyến đi của bạn trên trang web của chúng tôi một cách dễ dàng."
+      },
+      "step3": {
+        "title": "Đến Sân Bay vào Ngày Đã Chọn",
+        "description": "Đến sân bay vào ngày đã chọn và tận hưởng chuyến đi của bạn."
+      },
+      "ongoing": "Đang thực hiện",
+      "completed": "hoàn tất",
+      "tripTo": "Chuyến đi đến",
+      "going": "người đang đi"
+    }
+  }
+}

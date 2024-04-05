@@ -1,0 +1,48 @@
+/* .nav-menu{
+    box-shadow: 0 1px 10px rgba(95, 111, 149, 0.35);
+} */
+.nav-menu li a::after,
+.nav-menu li a::before {
+  background-color: white;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.1px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.nav-menu-transparent li a::after,
+.nav-menu-transparent li a::before {
+  background-color: black;
+
+}
+
+.nav-menu li a::before {
+  bottom: 10.5px;
+  left: 0;
+}
+.nav-menu li a::after {
+  bottom: 8px;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav li a::after {
+    bottom: 7px;
+  }
+}
+
+.nav-menu li.active a::after,
+.nav-menu li.active a::before,
+.nav-menu li:hover a::before,
+.nav-menu li:hover a::after {
+  width: 100%;
+}
+
+.translate-component a.active {
+  color: var(--primary-accent-light);
+  font-weight: 700;
+}

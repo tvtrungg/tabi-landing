@@ -1,0 +1,16 @@
+.back-to-top {
+  animation: uptodown 1s ease-in-out infinite;
+  z-index: 1000;
+}
+
+@keyframes uptodown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

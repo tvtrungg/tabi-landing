@@ -1,0 +1,61 @@
+.feature-container .ant-col:hover .down-arrow {
+  transform: translateY(10px);
+  animation: scrollIn 1.2s linear infinite;
+}
+
+@keyframes scrollIn {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.bg-community,
+.bg-connect,
+.bg-world,
+.bg-hotel {
+  height: 250px;
+  padding: 20px;
+  background: rgb(255, 240, 240) 50% 1.8rem no-repeat;
+  z-index: -1;
+}
+
+.bg-community span,
+.bg-connect span,
+.bg-world span,
+.bg-hotel span {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--primary-dominant-dark);
+  padding: 0 4px;
+}
+
+.bg-hotel {
+  background-image: url(../../../../../public/hotel-svgrepo-com.svg);
+}
+
+.bg-world {
+  background-image: url(../../../../../public/world-grid-svgrepo-com.svg);
+}
+
+.bg-connect {
+  background-image: url(../../../../../public/connect-svgrepo-com.svg);
+}
+
+.bg-community {
+  background-image: url(../../../../../public/community-svgrepo-com.svg);
+}
+
+.item-container .ant-rate-star.ant-rate-star-half .ant-rate-star-second,
+.item-container .ant-rate-star.ant-rate-star-zero span{
+  color: white;
+}
+
+
+

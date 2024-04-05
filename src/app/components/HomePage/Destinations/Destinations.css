@@ -1,0 +1,59 @@
+.destination-frame {
+  background-image: url(../../../../../public/maps.svg);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev,
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev:hover,
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: ease-in-out 0.3s;
+}
+
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev {
+  left: -8px;
+}
+
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next {
+  right: -8px;
+}
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next::before,
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev::before {
+  line-height: 1;
+  font-size: 20px;
+}
+
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev::before {
+  content: "\25C0";
+}
+
+.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next::before {
+  content: "\25BA";
+}
+
+.carousel-custom .slick-track {
+  display: flex;
+  gap: 1rem;
+  padding: 8px 0;
+}
+
+.carousel-custom .slick-dots.slick-dots-bottom li button{
+  color: black;
+  background: black;
+}
+
+
+
