@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Vollkorn } from "next/font/google";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { ConfigProvider } from "antd";
 import themeProvider from "../../../config/themeProvider";
-import Footer from "../components/Footer";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 import ReactQueryProvider from "@/providers/ReactQueryProviders";
-import { Suspense } from "react";
 import PageTransitionProvider from "../components/PageTransitionProvider";
 
 const locales = ["en", "vi"];
@@ -34,15 +34,41 @@ type Props = {
   };
 };
 
-const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
-  const messages = useMessages();
+// const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
+//   const messages = useMessages();
+//   return (
+//     <html lang={locale}>
+//       <NextIntlClientProvider messages={messages}>
+//         <ConfigProvider theme={{ token: themeProvider.token }}>
+//           <body className={inter.className}>
+//             <ReactQueryProvider>
+//               {/* <Loading /> */}
+//               <PageTransitionProvider>
+//                 <Header lang={locale} />
+//                 {children}
+//                 <Footer />
+//               </PageTransitionProvider>
+//             </ReactQueryProvider>
+//           </body>
+//         </ConfigProvider>
+//       </NextIntlClientProvider>
+//     </html>
+//   );
+// };
+
+// export default RootLayout;
+
+export default async function RootLayout({
+  children,
+  params: { locale },
+}: Props) {
+  const messages = await getMessages();
   return (
     <html lang={locale}>
       <NextIntlClientProvider messages={messages}>
         <ConfigProvider theme={{ token: themeProvider.token }}>
           <body className={inter.className}>
             <ReactQueryProvider>
-              {/* <Loading /> */}
               <PageTransitionProvider>
                 <Header lang={locale} />
                 {children}
@@ -54,6 +80,4 @@ const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
       </NextIntlClientProvider>
     </html>
   );
-};
-
-export default RootLayout;
+}
