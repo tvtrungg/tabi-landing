@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa6";
 import Navigation from "../Navigation";
 import Translation from "../Translation";
-import useGetPath from "../../../../lib/useGetPath";
+import useGetPath from "../../../utils/useGetPath";
 import Image from "next/image";
 import "./Header.css";
 import MobileHeader from "./MobileHeader";

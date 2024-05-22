@@ -10,8 +10,16 @@ import Romantic from "../components/HomePage/Romantic/Romantic";
 import Feature from "../components/HomePage/Features";
 import Download from "../components/HomePage/Download";
 import BackToTop from "../components/BackToTop";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Home() {
+type THomeProps = {
+  params: {
+    locale: string;
+  };
+};
+
+export default function Home({ params: { locale } }: THomeProps) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("container");
 
   return (
@@ -30,7 +38,10 @@ export default function Home() {
           overlay
         />
 
-        <div className="h-screen xs:max-w-screen-xs 2xs:max-w-screen-2xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto" id="main">
+        <div
+          className="h-screen xs:max-w-screen-xs 2xs:max-w-screen-2xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto"
+          id="main"
+        >
           <div className="w-full sm:w-1/2 lg:w-[35%] text-white z-[2] translate-y-1/2">
             <h4 className="relative md:text-center mb-5 text-lg">
               <span className="acreage-before">{t("homePage.acreage")}</span>
@@ -55,7 +66,9 @@ export default function Home() {
                 <Col span={24} md={8} className="flex gap-1">
                   <IoLocationOutline className="text-2xl align-text-bottom mr-1" />
                   <div>
-                    <h3 className="text-lg sm:text-xl">{t("homePage.criteria.item1")}</h3>
+                    <h3 className="text-lg sm:text-xl">
+                      {t("homePage.criteria.item1")}
+                    </h3>
                     <p className="text-grey text-sm sm:text-base">
                       {t("homePage.criteria.item1_sub")}
                     </p>
@@ -64,7 +77,9 @@ export default function Home() {
                 <Col span={24} md={9} className="flex gap-1">
                   <CiStar className="text-2xl align-text-bottom mr-1" />
                   <div>
-                    <h3 className="text-lg sm:text-xl">{t("homePage.criteria.item2")}</h3>
+                    <h3 className="text-lg sm:text-xl">
+                      {t("homePage.criteria.item2")}
+                    </h3>
                     <p className="text-grey text-sm sm:text-base">
                       {t("homePage.criteria.item2_sub")}
                     </p>
@@ -73,7 +88,9 @@ export default function Home() {
                 <Col span={24} md={7} className="flex gap-1">
                   <HiOutlineUserGroup className="text-2xl align-text-bottom mr-1" />
                   <div>
-                    <h3 className="text-lg sm:text-xl">{t("homePage.criteria.item3")}</h3>
+                    <h3 className="text-lg sm:text-xl">
+                      {t("homePage.criteria.item3")}
+                    </h3>
                     <p className="text-grey text-sm sm:text-base">
                       {t("homePage.criteria.item3_sub")}
                     </p>

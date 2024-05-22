@@ -63,6 +63,7 @@ export default async function RootLayout({
   params: { locale },
 }: Props) {
   const messages = await getMessages();
+
   return (
     <html lang={locale}>
       <NextIntlClientProvider messages={messages}>
