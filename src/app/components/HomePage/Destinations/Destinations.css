@@ -14,13 +14,15 @@
 
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev,
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   padding: 8px;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev:hover,
@@ -30,24 +32,16 @@
 }
 
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev {
-  left: -8px;
+  left: -24px;
 }
 
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next {
-  right: -8px;
+  right: -24px;
 }
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next::before,
 .ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev::before {
   line-height: 1;
   font-size: 20px;
-}
-
-.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-prev::before {
-  content: "\25C0";
-}
-
-.ant-carousel .slick-slider.carousel-custom .slick-arrow.slick-next::before {
-  content: "\25BA";
 }
 
 .carousel-custom .slick-track {

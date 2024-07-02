@@ -1,10 +1,10 @@
 {
   "container": {
     "homePage": {
-      "acreage": "76,19 km², Europe",
-      "title": "Santorini",
-      "title2": ", Hy Lạp",
-      "subTitle": "Santorini - một trong những quần đảo Cycladic thuộc Hy Lạp ở biển Aegean",
+      "acreage": "135,3 km², Việt Nam",
+      "title": "Đà Nẵng",
+      "title2": ", Quảng Nam",
+      "subTitle": "Hà Giang - một tỉnh miền núi phía bắc Việt Nam nổi tiếng với phong cảnh núi non hùng vĩ, đa dạng dân tộc và văn hóa dân gian sôi động.",
       "criteria": {
         "item1": "Địa điểm ",
         "item1_sub": "Điểm đến của bạn là ở đâu?",
@@ -97,6 +97,64 @@
       "completed": "hoàn tất",
       "tripTo": "Chuyến đi đến",
       "going": "người đang đi"
+    },
+    "aboutPage": {
+      "title": "Về chúng tôi",
+      "subTitle": "Nguồn gốc của",
+      "description": "Tabi is a travel agency that specializes in providing luxury travel experiences to discerning travelers. Our exclusive network connects 68,000 families to global destinations, offering refined experiences and seamless convenience. We are committed to providing exceptional service and ensuring that our clients have an unforgettable travel experience.",
+      "section1": {
+        "position1": "Frontend",
+        "mem1": "Vĩnh Trung",
+        "position2": "Tester",
+        "mem2": "Thanh Tú",
+        "position3": "Mobile",
+        "mem3": "Kim Tân",
+        "position4": "Fullstack",
+        "mem4": "Hoài Nam",
+        "position5": "Backend",
+        "mem5": "Trung Hiếu"
+      },
+      "section2": {
+        "title": "Ứng dụng lập kế hoạch du lịch",
+        "content1": "Với Ứng dụng Lập kế hoạch Du lịch, chúng tôi tận tâm nâng cấp cách mọi người lập kế hoạch cho trải nghiệm du lịch của họ. Nền tảng này cho phép người dùng tạo ra các lịch trình du lịch cá nhân dựa trên những mong muốn và sở thích của mình. Cho dù đó là đặt vé máy bay, chỗ ở, hay vé tham quan, ứng dụng của chúng tôi đơn giản hóa toàn bộ quy trình từ đầu đến cuối.",
+        "content2": "Điều làm cho chúng tôi nổi bật so với các ứng dụng khác là hệ thống thông minh của chúng tôi. Sau khi các đặt chỗ được xác nhận, hệ thống của chúng tôi tiếp tục hỗ trợ người dùng suốt chuyến đi bằng những lời nhắc kịp thời và giao diện chat linh hoạt. Hãy tưởng tượng bạn nhận được những lời nhắc về lịch trình dựa trên vị trí hiện tại của bạn, hoặc dễ dàng truy cập thông tin về các điểm tham quan hoặc dịch vụ gần đó - tất cả được tích hợp một cách hài hòa vào trải nghiệm du lịch của bạn.",
+        "content3": "Hơn thế nữa, nền tảng của chúng tôi còn tích hợp trí tuệ nhân tạo để nâng cao hơn nữa hỗ trợ và tương tác với người dùng.",
+        "content4": "Hãy cùng tham gia với chúng tôi tại dự án Lập kế hoạch Du lịch, chúng tôi sẽ định nghĩa lại việc lập kế hoạch du lịch trong tương lai với sự đổi mới và trí tuệ nhân tạo."
+      }
+    },
+    "contactPage":{
+      "title": "Liên hệ với chúng tôi",
+      "subTitle": "Liên lạc",
+      "subTitle_2": "Vị trí của Tabi",
+      "description": "Chúng tôi ở đây để hỗ trợ bạn với bất kỳ thắc mắc hoặc mối quan tâm nào bạn có thể có. Vui lòng liên hệ với chúng tôi qua thông tin được cung cấp bên dưới và chúng tôi sẽ trả lời tin nhắn của bạn trong thời gian sớm nhất.",
+      "form": {
+        "name": {
+          "label": "Họ tên",
+          "placeholder": "Nhập họ tên của bạn",
+          "required": "Vui lòng nhập họ tên của bạn!"
+        },
+        "phone": {
+          "label": "Số điện thoại",
+          "placeholder": "Nhập số điện thoại của bạn",
+          "required": "Vui lòng nhập số điện thoại của bạn!"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Nhập e-mail của bạn",
+          "required": "Vui lòng nhập e-mail của bạn!"
+        },
+        "message": {
+          "label": "Tin nhắn",
+          "placeholder": "Nhập tin nhắn của bạn",
+          "required": "Vui lòng nhập tin nhắn của bạn!"
+        },
+        "send": "Gửi",
+        "sending": "Đang gửi...",
+        "success": "Gửi thành công!",
+        "success_2": "Cảm ơn bạn đã gửi tin nhắn! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể!",
+        "error": "Gửi thất bại!"
+
+      }
     }
   }
 }

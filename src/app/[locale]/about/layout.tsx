@@ -1,3 +1,5 @@
+import "./about.css";
+
 export default function AboutLayout({
   children, // will be a page or nested layout
 }: {
@@ -5,7 +7,6 @@ export default function AboutLayout({
 }) {
   return (
     <section>
-      <nav></nav>
       {children}
     </section>
   );

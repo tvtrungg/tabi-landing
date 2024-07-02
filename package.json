@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "antd": "^5.15.3",
     "framer-motion": "^10.16.4",
     "lodash": "^4.17.21",

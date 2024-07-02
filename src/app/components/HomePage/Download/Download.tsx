@@ -4,12 +4,12 @@ import SynthesisEffect from "../../AnimationEffect/SynthesisEffect";
 
 function Download() {
   return (
-    <div className="max-w-screen-xl h-full mx-auto">
+    <div className="max-w-screen-xl mx-auto">
       <SynthesisEffect animationType="opacity">
         <Row className="justify-between">
-          <Col span={9} className="mt-16 mb-36">
+          <Col span={9} className="mt-16 mb-40">
             <h1 className="text-5xl">Download and find your destinations</h1>
-            <p className="text-base my-8">
+            <p className="text-base text-justify my-8">
               Tabi Travel, allows users to effortlessly plan their trips and
               book tickets. With intelligent features like reminders and
               location-based assistance, it provides seamless support throughout
@@ -37,17 +37,17 @@ function Download() {
           <Col span={10} className="relative overflow-hidden">
             <Image
               className="absolute top-0 left-0"
-              src="/test.png"
+              src="/phone.png"
               alt="Phone"
-              width={300}
-              height={574}
+              width={270}
+              height={486}
             />
             <Image
               className="absolute top-10 right-10 -z-[1]"
-              src="/test.png"
+              src="/phone.png"
               alt="Phone"
-              width={300}
-              height={574}
+              width={270}
+              height={486}
             />
           </Col>
         </Row>

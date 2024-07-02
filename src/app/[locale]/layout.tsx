@@ -34,30 +34,6 @@ type Props = {
   };
 };
 
-// const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
-//   const messages = useMessages();
-//   return (
-//     <html lang={locale}>
-//       <NextIntlClientProvider messages={messages}>
-//         <ConfigProvider theme={{ token: themeProvider.token }}>
-//           <body className={inter.className}>
-//             <ReactQueryProvider>
-//               {/* <Loading /> */}
-//               <PageTransitionProvider>
-//                 <Header lang={locale} />
-//                 {children}
-//                 <Footer />
-//               </PageTransitionProvider>
-//             </ReactQueryProvider>
-//           </body>
-//         </ConfigProvider>
-//       </NextIntlClientProvider>
-//     </html>
-//   );
-// };
-
-// export default RootLayout;
-
 export default async function RootLayout({
   children,
   params: { locale },

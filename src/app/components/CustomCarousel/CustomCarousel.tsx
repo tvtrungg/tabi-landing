@@ -4,6 +4,8 @@ import { Card, Carousel } from "antd";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaLocationArrow } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 type CustomCarouselProps = {
   array: any[];
@@ -37,6 +39,8 @@ function CustomCarousel({ array }: CustomCarouselProps) {
       slidesToScroll={slidesToShow}
       {...SETTINGS_CAROUSEL}
       className="z-10 carousel-custom pb-10"
+      prevArrow={<IoIosArrowBack />}
+      nextArrow={<IoIosArrowForward />}
     >
       {array.map((item, index) => {
         return (
@@ -56,7 +60,7 @@ function CustomCarousel({ array }: CustomCarouselProps) {
           >
             <div className="flex flex-col gap-2">
               <div className="flex justify-between items-center">
-                <h3 className="text-lg">{item.title}</h3>
+                <h3 className="text-base">{item.title}</h3>
                 <span className="text-base">{item.price}</span>
               </div>
               <div className="flex gap-2 items-center">

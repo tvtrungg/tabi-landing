@@ -1,10 +1,10 @@
 {
   "container": {
     "homePage": {
-      "acreage": "76,19 km², Europe",
-      "title": "Santorini",
-      "title2": ", Greece",
-      "subTitle": "Santorini - one of the Cycladic Islands belonging to Greece in the Aegean Sea",
+      "acreage": "135,3 km², Viet Nam",
+      "title": "Ha Giang",
+      "title2": ", Quang Nam",
+      "subTitle": "Ha Giang - a remote province in northern Vietnam, famed for its breathtaking mountainous landscapes, ethnic diversity, and vibrant local cultures.",
       "criteria": {
         "item1": "Location",
         "item1_sub": "Where is your destination?",
@@ -91,6 +91,64 @@
       "completed": "completed",
       "tripTo": "Trip to",
       "going": "people going"
+    },
+    "aboutPage": {
+      "title": "About Us",
+      "subTitle": "Origin of",
+      "description": "Tabi is a travel agency that specializes in providing luxury travel experiences to discerning travelers. Our exclusive network connects 68,000 families to global destinations, offering refined experiences and seamless convenience. We are committed to providing exceptional service and ensuring that our clients have an unforgettable travel experience.",
+      "section1": {
+        "position1": "Frontend",
+        "mem1": "Vinh Trung",
+        "position2": "Tester",
+        "mem2": "Thanh Tu",
+        "position3": "Mobile",
+        "mem3": "Kim Tan",
+        "position4": "Fullstack",
+        "mem4": "Hoai Nam",
+        "position5": "Backend",
+        "mem5": "Trung Hieu"
+      },
+      "section2": {
+        "title": "Travel-Planning Application",
+        "content1": "At Travel-Planning Application, we are dedicated to revolutionizing the way people plan their travel experiences. Our platform empowers users to create personalized travel itineraries based on their desires and interests. Whether it's booking flights, accommodations, or tickets for attractions, our application simplifies the entire process from start to finish.",
+        "content2": "What sets us apart from other applications is our intelligent system. Once bookings are confirmed, our system continues to support users throughout their journey with timely reminders and a responsive chat interface. Imagine receiving reminders about your itinerary based on your current location, or easily accessing information about nearby attractions or services—all seamlessly integrated into your travel experience.",
+        "content3": "What's more, our platform integrates artificial intelligence to further enhance user support and engagement.",
+        "content4": "Join us at Building Travel-Planning Application as we redefine the future of travel planning with innovation and intelligence."
+      }
+    },
+    "contactPage":{
+      "title": "Contact Us",
+      "subTitle": "Get in Touch",
+      "subTitle_2": "Tabi's Location",
+      "description": "We are here to assist you with any inquiries or concerns you may have. Please feel free to contact us via the information provided below, and we will respond to your message as soon as possible.",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter your name",
+          "required": "Please enter your name!"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter your phone number",
+          "required": "Please enter your phone number!"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "required": "Please enter your email!"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Enter your message",
+          "required": "Please enter your message!"
+        },
+        "send": "Send",
+        "sending": "Sending...",
+        "success": "Sent successfully!",
+        "success_2": "Thank you for your message! We will contact you soon!",
+        "error": "Failed to send!"
+
+      }
     }
   }
 }

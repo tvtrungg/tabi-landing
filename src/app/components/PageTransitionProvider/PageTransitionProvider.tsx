@@ -18,13 +18,12 @@ function PageTransitionProvider({ children }: PageTransitionProviderProps) {
           animate={{ height: "0vh" }}
           exit={{ height: "140vh" }}
           transition={{ duration: 1, ease: "easeOut" }}
-        >
-        </motion.div>
+        ></motion.div>
         <motion.div
           className="fixed m-auto top-0 bottom-0 left-0 right-0 text-white text-8xl cursor-default z-50 w-fit h-fit"
-          initial={{ opacity: 1 }}
-          animate={{ opacity: 0 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 1, display: "block" }}
+          animate={{ opacity: 0, display: "none" }}
+          exit={{ opacity: 0, display: "none" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           {pathname.substring(3).split("/")}

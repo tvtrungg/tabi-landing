@@ -21,11 +21,9 @@ function Header({ lang }: THeaderProps) {
   const [open, setOpen] = useState(false);
   const [bgWhite, setBgWhite] = useState(false);
   const { scrollY } = useScroll();
-
   const navItems = [
     { href: ``, label: t("header.nav1") },
     { href: `about`, label: t("header.nav2") },
-    { href: `services`, label: t("header.nav3") },
     { href: `contact`, label: t("header.nav4") },
   ];
 
@@ -36,12 +34,19 @@ function Header({ lang }: THeaderProps) {
     } else {
       setHidden(false);
     }
-    if (latest > 500) {
+    if (latest > 500 && currentRoute === "") {
       setBgWhite(true);
-    } else {
+    }
+    if (latest < 500 && currentRoute === "") {
       setBgWhite(false);
     }
   });
+
+  useEffect(() => {
+    if (currentRoute !== "") {
+      setBgWhite(true);
+    }
+  }, [currentRoute]);
 
   const hideTimeout = useRef<any>(null);
 
@@ -82,10 +87,10 @@ function Header({ lang }: THeaderProps) {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.3 }}
-      className={`fixed top-0 left-0 w-full text-lg backdrop-blur-sm z-20 ${
-        bgWhite ? "bg-white shadow-lg" : "bg-[#00000003]"
+      className={`fixed top-0 left-0 w-full text-lg z-20 ${
+        bgWhite ? "bg-white shadow-md" : ""
       }
-      ${open && "bg-[#00000076]"}
+      ${open && "bg-[#000000db]"}
       `}
     >
       <div
