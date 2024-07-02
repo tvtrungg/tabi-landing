@@ -1,23 +1,30 @@
-import { Form, Input, InputNumber } from "antd";
+"use client";
+import { Form, Input, InputNumber, notification } from "antd";
 import { useTranslations } from "next-intl";
 import { IoIosSend } from "react-icons/io";
+import { useForm } from "@formspree/react";
+import { useEffect } from "react";
+import { values } from "lodash";
 
-type Props = {
-  form: any;
-  state: any;
-  handleSubmit: any;
-};
-
-const CustomForm = ({ form, state, handleSubmit }: Props) => {
+const CustomForm = () => {
   const t = useTranslations("container");
 
-  const integerParser = (value: any) => {
-    const parsedValue = parseInt(value, 10);
-    if (isNaN(parsedValue)) {
-      return 0;
+  const [form] = Form.useForm();
+  const [state, handleSubmit] = useForm(
+    process.env.NEXT_PUBLIC_FORMSPREE_ID || ""
+  );
+
+  useEffect(() => {
+    if (state.succeeded) {
+      notification.open({
+        message: t("contactPage.form.success"),
+        description: t("contactPage.form.success_2"),
+        type: "success",
+      });
+      form.resetFields();
     }
-    return parsedValue;
-  };
+  }, [state.succeeded, form, t]);
+
   return (
     <div className="contact-form h-full bg-[#ff2c2c17] p-6 pl-8 overflow-y-auto">
       <h1 className="mb-10 text-xl xs:text-2xl 2xs:text-3xl md:text-4xl uppercase">
@@ -45,6 +52,7 @@ const CustomForm = ({ form, state, handleSubmit }: Props) => {
               placeholder={t("contactPage.form.name.placeholder")}
             />
           </Form.Item>
+
           <Form.Item
             className="w-full basis-[48%]"
             label={t("contactPage.form.phone.label")}
@@ -53,15 +61,10 @@ const CustomForm = ({ form, state, handleSubmit }: Props) => {
               { required: true, message: t("contactPage.form.phone.required") },
             ]}
           >
-            <InputNumber
+            <Input
+              type="number"
               className="input-form bg-transparent border-none"
               placeholder={t("contactPage.form.phone.placeholder")}
-              min={0}
-              max={999999999}
-              parser={integerParser}
-              formatter={(value) => {
-                return `0${value}`;
-              }}
             />
           </Form.Item>
         </div>

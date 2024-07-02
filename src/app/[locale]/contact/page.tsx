@@ -1,27 +1,19 @@
-"use client";
-import { Form, notification } from "antd";
-import { useForm } from "@formspree/react";
+
 import CustomForm from "@/app/components/CustomForm";
 import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Contact() {
-  const t = useTranslations("container");
-  const [form] = Form.useForm();
-  const [state, handleSubmit] = useForm(
-    process.env.NEXT_PUBLIC_FORMSPREE_ID || ""
-  );
-  const openNotification = () => {
-    notification.open({
-      message: t("contactPage.form.success"),
-      description: t("contactPage.form.success_2"),
-      type: "success",
-    });
+type TContactProps = {
+  params: {
+    locale: string;
   };
+};
 
-  if (state.succeeded) {
-    openNotification();
-    form.resetFields();
-  }
+export default function Contact({ params: { locale } }: TContactProps) {
+  unstable_setRequestLocale(locale);
+  const t = useTranslations("container");
+
+
 
   return (
     <div className="w-full h-full">
@@ -52,7 +44,7 @@ export default function Contact() {
           </div>
 
           <div className="map-content w-full h-full sm:basis-[40%]">
-            <CustomForm form={form} state={state} handleSubmit={handleSubmit} />
+            <CustomForm  />
           </div>
         </div>
       </div>

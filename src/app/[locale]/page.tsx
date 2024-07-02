@@ -10,8 +10,16 @@ import Romantic from "../components/HomePage/Romantic/Romantic";
 import Feature from "../components/HomePage/Features";
 import Download from "../components/HomePage/Download";
 import BackToTop from "../components/BackToTop";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Home() {
+type THomeProps = {
+  params: {
+    locale: string;
+  };
+};
+
+export default function Home({ params: { locale } }: THomeProps) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("container");
 
   return (
