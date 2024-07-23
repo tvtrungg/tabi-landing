@@ -2,7 +2,7 @@
   "container": {
     "homePage": {
       "acreage": "135,3 km², Việt Nam",
-      "title": "Đà Nẵng",
+      "title": "Hà Giang",
       "title2": ", Quảng Nam",
       "subTitle": "Hà Giang - một tỉnh miền núi phía bắc Việt Nam nổi tiếng với phong cảnh núi non hùng vĩ, đa dạng dân tộc và văn hóa dân gian sôi động.",
       "criteria": {
@@ -100,7 +100,7 @@
     },
     "aboutPage": {
       "title": "Về chúng tôi",
-      "subTitle": "Nguồn gốc của",
+      "subTitle": "Nguồn gốc của ",
       "description": "Tabi is a travel agency that specializes in providing luxury travel experiences to discerning travelers. Our exclusive network connects 68,000 families to global destinations, offering refined experiences and seamless convenience. We are committed to providing exceptional service and ensuring that our clients have an unforgettable travel experience.",
       "section1": {
         "position1": "Frontend",

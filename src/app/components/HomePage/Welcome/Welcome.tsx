@@ -29,7 +29,7 @@ function Welcome() {
         <div
           className="absolute inset-0 z-0 overplay-bg"
           style={{
-            backgroundImage: `url(/bg-2.png)`,
+            backgroundImage: `url(/bg-2.jpg)`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
