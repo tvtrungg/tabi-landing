@@ -19,11 +19,6 @@ function About({ params: { locale } }: TAboutProps) {
       {
         position: t("aboutPage.section1.position1"),
         member: t("aboutPage.section1.mem1"),
-        imgSrc: "/about/1.jpg",
-      },
-      {
-        position: t("aboutPage.section1.position2"),
-        member: t("aboutPage.section1.mem2"),
         imgSrc: "/about/2.jpg",
       },
       {
@@ -34,7 +29,7 @@ function About({ params: { locale } }: TAboutProps) {
       {
         position: t("aboutPage.section1.position4"),
         member: t("aboutPage.section1.mem4"),
-        imgSrc: "/about/4.jpg",
+        imgSrc: "/about/6.jpg",
       },
       {
         position: t("aboutPage.section1.position5"),
