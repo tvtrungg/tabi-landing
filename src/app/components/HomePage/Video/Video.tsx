@@ -48,7 +48,7 @@ function Video({ srcVideo, poster, className, overlay, srcImg }: TVideoProps) {
         />
       )}
       {overlay && (
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-black"></div>
+        <div className="absolute top-0 left-0 w-full h-full"></div>
       )}
     </>
   );

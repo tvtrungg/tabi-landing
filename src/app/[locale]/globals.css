@@ -42,6 +42,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth  !important;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-dominant-dark);
@@ -59,7 +63,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* font-family: "__Domine_12d4f3", "__Domine_Fallback_12d4f3"; */
+  font-family: "__Domine_12d4f3", "__Domine_Fallback_12d4f3" !important;
   font-weight: 400;
   overflow-x: hidden;
 }

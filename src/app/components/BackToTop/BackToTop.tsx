@@ -29,8 +29,8 @@ function BackToTop() {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
       {isVisible && (
-        <span className="rounded-full w-10 h-10 bg-[#00000088] hover:bg-[#000000d8] flex items-center justify-center">
-          <IoIosArrowUp className="text-4xl text-white" />
+        <span className="rounded-full w-9 h-9 bg-[#00000088] hover:bg-[#000000d8] flex items-center justify-center">
+          <IoIosArrowUp className="text-2xl text-white" />
         </span>
       )}
     </div>

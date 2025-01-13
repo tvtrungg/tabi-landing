@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import { Vollkorn } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { ConfigProvider } from "antd";
@@ -16,9 +16,9 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const inter = Roboto({
+const inter = Vollkorn({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className="!scroll-smooth">
       <NextIntlClientProvider messages={messages}>
         <ConfigProvider theme={{ token: themeProvider.token }}>
           <body className={inter.className}>

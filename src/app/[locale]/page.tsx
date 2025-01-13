@@ -26,9 +26,9 @@ export default function Home({ params: { locale } }: THomeProps) {
     <>
       <div className="relative h-screen w-full">
         <Video
-          srcVideo="/Vietnam.mp4"
-          poster="/poster-vn.png"
-          srcImg="/vietnam-1.jpg"
+          srcVideo="/santorini.mp4"
+          poster="/santorini1.png"
+          srcImg="/santorini1.png"
           overlay
         />
 
@@ -36,13 +36,13 @@ export default function Home({ params: { locale } }: THomeProps) {
           className="h-screen xs:max-w-screen-xs 2xs:max-w-screen-2xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto"
           id="main"
         >
-          <div className="w-full sm:w-1/2 lg:w-[40%] text-white z-[2] translate-y-2/3">
+          <div className="w-full sm:w-1/2 lg:w-[40%] text-white z-[2] translate-y-1/2">
             <h4 className="relative md:text-center mb-5 text-lg">
               <span className="acreage-before">{t("homePage.acreage")}</span>
             </h4>
-            <h1 className="text-6xl 2xs:text-7xl sm:text-8xl text-primary-dominant-light">
+            <h1 className="text-6xl 2xs:text-7xl sm:text-8xl text-primary-accent-light">
               {t("homePage.title")}
-              {/* <span className="text-white">{t("homePage.title2")}</span> */}
+              <span className="text-white">{t("homePage.title2")}</span>
             </h1>
             <h4 className="tracking-wider text-lg sm:text-lg font-normal text-white mt-4">
               {t("homePage.subTitle")}

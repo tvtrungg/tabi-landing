@@ -43,6 +43,6 @@
 }
 
 .translate-component a.active {
-  color: var(--primary-dominant-dark);
+  color: var(--primary-accent-dark);
   font-weight: 700;
 }

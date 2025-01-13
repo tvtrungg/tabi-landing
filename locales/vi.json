@@ -1,10 +1,10 @@
 {
   "container": {
     "homePage": {
-      "acreage": "135,3 km², Việt Nam",
-      "title": "Hà Giang",
-      "title2": ", Quảng Nam",
-      "subTitle": "Hà Giang - một tỉnh miền núi phía bắc Việt Nam nổi tiếng với phong cảnh núi non hùng vĩ, đa dạng dân tộc và văn hóa dân gian sôi động.",
+      "acreage": "76,19 km², Châu Âu",
+      "title": "Santorini",
+      "title2": ", Hy Lạp",
+      "subTitle": "Santorini - một trong những quần đảo Cycladic thuộc Hy Lạp ở biển Aegean, nổi tiếng với những ngôi nhà trắng tinh khôi, biển xanh ngát và những hoàng hôn tuyệt đẹp.",
       "criteria": {
         "item1": "Địa điểm ",
         "item1_sub": "Điểm đến của bạn là ở đâu?",
@@ -122,7 +122,7 @@
         "content4": "Hãy cùng tham gia với chúng tôi tại dự án Lập kế hoạch Du lịch, chúng tôi sẽ định nghĩa lại việc lập kế hoạch du lịch trong tương lai với sự đổi mới và trí tuệ nhân tạo."
       }
     },
-    "contactPage":{
+    "contactPage": {
       "title": "Liên hệ với chúng tôi",
       "subTitle": "Liên lạc",
       "subTitle_2": "Vị trí của Tabi",
@@ -153,7 +153,6 @@
         "success": "Gửi thành công!",
         "success_2": "Cảm ơn bạn đã gửi tin nhắn! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể!",
         "error": "Gửi thất bại!"
-
       }
     }
   }

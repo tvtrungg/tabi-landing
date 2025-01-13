@@ -22,13 +22,13 @@ const Translation = ({ currentRoute, lang, bgWhite }: Props) => {
         href={`/${LINK.VI}/${currentRoute}`}
         className={`pr-2 ${borderClass} ${isViActive ? "active" : ""}`}
       >
-        <span className="hover:text-slate-300">Vi</span>
+        <span className="hover:text-primary-accent-lighter">Vi</span>
       </Link>
       <Link
         href={`/${LINK.EN}/${currentRoute}`}
         className={`pl-2 ${textColor} ${isEnActive ? "active" : ""}`}
       >
-        <span className="hover:text-slate-300">En</span>
+        <span className="hover:text-primary-accent-lighter">En</span>
       </Link>
     </div>
   );
