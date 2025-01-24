@@ -10,7 +10,7 @@ import Romantic from "../components/HomePage/Romantic/Romantic";
 import Feature from "../components/HomePage/Features";
 import Download from "../components/HomePage/Download";
 import BackToTop from "../components/BackToTop";
-import { unstable_setRequestLocale } from "next-intl/server";
+import {setRequestLocale} from 'next-intl/server';
 
 type THomeProps = {
   params: {
@@ -19,7 +19,7 @@ type THomeProps = {
 };
 
 export default function Home({ params: { locale } }: THomeProps) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations("container");
 
   return (

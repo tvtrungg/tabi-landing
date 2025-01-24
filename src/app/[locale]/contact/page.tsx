@@ -1,7 +1,7 @@
 
 import CustomForm from "@/app/components/CustomForm";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import {setRequestLocale} from 'next-intl/server';
 
 type TContactProps = {
   params: {
@@ -10,7 +10,7 @@ type TContactProps = {
 };
 
 export default function Contact({ params: { locale } }: TContactProps) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations("container");
 
 

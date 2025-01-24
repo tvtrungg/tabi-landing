@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import IntroMembers from "./IntroMembers";
 import Welcome from "@/app/components/HomePage/Welcome";
-import { unstable_setRequestLocale } from "next-intl/server";
+import {setRequestLocale} from 'next-intl/server';
 
 type TAboutProps = {
   params: {
@@ -10,7 +10,7 @@ type TAboutProps = {
 };
 
 function About({ params: { locale } }: TAboutProps) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
   const t = useTranslations("container");
 
   // Create the data to pass to IntroMembers

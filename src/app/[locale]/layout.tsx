@@ -1,19 +1,23 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import { Vollkorn } from "next/font/google";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import { ConfigProvider } from "antd";
 import themeProvider from "../../../config/themeProvider";
+
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import {notFound} from 'next/navigation';
+import {routing} from '@/i18n/routing';
+import {setRequestLocale} from 'next-intl/server';
+
 import ReactQueryProvider from "@/providers/ReactQueryProviders";
 import PageTransitionProvider from "../components/PageTransitionProvider";
-
-const locales = ["en", "vi"];
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({locale}));
 }
 
 const inter = Vollkorn({
@@ -38,10 +42,15 @@ export default async function RootLayout({
   children,
   params: { locale },
 }: Props) {
+
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="!scroll-smooth">
+    <html lang={locale}>
       <NextIntlClientProvider messages={messages}>
         <ConfigProvider theme={{ token: themeProvider.token }}>
           <body className={inter.className}>
